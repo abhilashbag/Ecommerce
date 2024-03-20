@@ -39,7 +39,10 @@ function displayCategoryImages(category, products) {
 
     // Add click event listener to each product item
     productItem.addEventListener('click', () => {
-      window.location.href = "./pages/product.html";
+     // Construct the URL for the product page based on the product ID
+     const productPageUrl = `./pages/product.html?id=${product.id}`;
+     // Redirect to the product page
+     window.location.href = productPageUrl;
     });
   });
 
