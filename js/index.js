@@ -39,10 +39,17 @@ function displayCategoryImages(category, products) {
 
     // Add click event listener to each product item
     productItem.addEventListener('click', () => {
+<<<<<<< HEAD
       window.location.href = "/pages/product.html";
       console.log(window.location.href);
       // window.location.pathname = pathname;
       // console.log(window.location.pathname);
+=======
+     // Construct the URL for the product page based on the product ID
+     const productPageUrl = `./pages/product.html?id=${product.id}`;
+     // Redirect to the product page
+     window.location.href = productPageUrl;
+>>>>>>> d33941e3627dfe2c451352e7dc00459a80f74ea2
     });
   });
 

@@ -29,7 +29,7 @@ function displayFilteredImages(products) {
 
     // Add click event listener to each swiper-slide
     div.addEventListener('click', () => {
-      // window.location.replace = `./pages/product.html?id=${product.id}`; // Redirect to product page with product ID
+      // window.location.replace = `./Pages/product.html?id=${product.id}`; // Redirect to product page with product ID
       let pathname = '/Pages/product.html'
       window.location.pathname = pathname;
       // console.log(window.location.pathname);
