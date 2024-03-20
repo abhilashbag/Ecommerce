@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+
+<body>
+    <div id="login-form-container">
+        <div class="container">
+            <div class="form-wrapper">
+                <div id="login-form" class="form active">
+                    <h2>Login</h2>
+                    <form id="login-form-data">
+                        <div class="form-group">
+                            <label for="login-email">Email Address</label>
+                            <input type="email" id="login-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" name="password" required>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        <button type="submit">Login</button>
+                        <span class="or">or</span>
+                        <button type="button" id="switch-to-signup">Sign Up</button>
+                    </form>
+                </div>
+                <div id="signup-form" class="form">
+                    <h2>Sign Up</h2>
+                    <form id="signup-form-data">
+                        <div class="form-group">
+                            <label for="signup-name">Name</label>
+                            <input type="text" id="signup-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-email">Email Address</label>
+                            <input type="email" id="signup-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" name="password" required>
+                        </div>
+                        <button type="submit">Sign Up</button>
+                        <span class="or">or</span>
+                        <button type="button" id="switch-to-login">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="../js/login.js"></script>
+        <script src="../js/signup.js"></script> 
+        <script src="../js/firebase.js"></script>
+    </body>
+
+</html>

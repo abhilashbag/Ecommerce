@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce App</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/cart.css">
+
+  <script src="https://kit.fontawesome.com/7dfeb97960.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="wrapper">
+        <div class="col-md-2 col-6">
+          <img src="../assets/images/Smart.png" href="../index.html" alt="Logo" class="logo" />
+        </div>
+        <div class="links">
+          <nav class="navbar navbar-expand-md">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right-container">
+          <div class="cart-icon">
+              <i class="fas fa-shopping-cart fa-xl"></i>
+              <span class="badge">0</span>
+            </div>
+          <i class="fa-solid fa-user fa-xl" style="color: #74c0fc" id="user"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="Back-btn-container" onclick="goBack()">
+    <a href="./product.html" class="backbutton">
+      <i class="fa-solid fa-arrow-left 2xl" style="color: #ff0000;"></i>
+      <span>Back</span>
+    </a>
+  </div>
+  <div id="wrapper">
+    <h1>Shopping Cart</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <!-- Cart items will be dynamically added here -->
+      </tbody>
+    </table>
+    <div class="empty-cart">
+      <i class="fas fa-shopping-cart empty-icon"></i>
+      <p class="empty-message">Your cart is empty. <a href="product.html" class="shop-now-link">Shop Now</a></p>
+  </div>
+  </div>
+  <script src="../js/cart.js"></script>
+</body>
+
+</html>
