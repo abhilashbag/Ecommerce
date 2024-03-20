@@ -1,5 +1,5 @@
+window.addEventListener('DOMContentLoaded', fetchData, false);
 const container = document.querySelector("#product-grid");
-
 async function fetchData() {
   const url = "https://dummyjson.com/products?limit=100";
   const response = await fetch(url);
@@ -39,7 +39,10 @@ function displayCategoryImages(category, products) {
 
     // Add click event listener to each product item
     productItem.addEventListener('click', () => {
-      window.location.href = `product.html?id=${product.id}`;
+      window.location.href = "/pages/product.html";
+      console.log(window.location.href);
+      // window.location.pathname = pathname;
+      // console.log(window.location.pathname);
     });
   });
 

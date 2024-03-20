@@ -1,0 +1,90 @@
+:root {
+    --dark-black: #222831;
+    --black: #31363F;
+    --light-blue: #76ABAE;
+    --light: #EEEEEE;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: var(--black);
+    color: var(--light);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.links {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--light);
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Contact Page Styles */
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--dark-black);
+}
+
+.contact-info p {
+    text-align: center;
+    color: var(--black);
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--dark-black);
+    color: var(--light);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
